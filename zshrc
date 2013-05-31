@@ -1,3 +1,8 @@
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# DO NOT EDIT BELOW THIS LINE
+
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
