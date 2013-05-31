@@ -1,3 +1,9 @@
+[user]
+  name = Paul Smith
+  email = catalystmediastudios@gmail.com
+
+# DO NOT EDIT BELOW THIS LINE
+
 [push]
   default = upstream
 [color]
