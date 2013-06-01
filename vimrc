@@ -92,9 +92,10 @@ function! InsertTabWrapper()
     endif
 endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
-" Type jj in insert mode to escape to command mode "
+" Type jj in insert mode to escape to command mode
 :imap jj <Esc>
-
+" Use semicolon instead of colon. Don't have to hit shift now
+map ; :
 
 " Exclude Javascript files in :Rtags via rails.vim due to warnings when parsing
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
