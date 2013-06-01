@@ -1,4 +1,4 @@
-thoughtbot dotfiles
+My dotfiles forked from thoughtbot/dotfiles
 ===================
 
 Requirements
