@@ -112,6 +112,10 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" Better scroll behavior
+set scrolljump=1                " lines to scroll when cursor leaves screen
+set scrolloff=5                 " minimum lines to keep above and below cursor
+
 " vim-rspec mappings
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
