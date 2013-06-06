@@ -1,3 +1,6 @@
+# Open new tabs in terminal with the current directory
+precmd () {print -Pn "\e]2; %~/ \a"}
+preexec () {print -Pn "\e]2; %~/ \a"}
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
