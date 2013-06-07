@@ -94,6 +94,8 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 " Type jj in insert mode to escape to command mode
 :imap jj <Esc>
+" Type ;; in insert mode to escape to command mode with a : already typed
+:imap ;; <Esc>:
 " Use semicolon instead of colon. Don't have to hit shift now
 map ; :
 
