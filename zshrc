@@ -59,6 +59,17 @@ setopt histignoredups
 # keep TONS of history
 export HISTSIZE=4096
 
+# Save history for later use
+if (( ! EUID )); then
+  HISTFILE=~/.history_root
+else
+  HISTFILE=~/.history
+fi
+SAVEHIST=1000
+
+# Share history between sessions
+setopt SHARE_HISTORY
+
 # look for ey config in project dirs
 export EYRC=./.eyrc
 
