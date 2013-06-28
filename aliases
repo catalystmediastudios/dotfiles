@@ -32,3 +32,10 @@ alias z="zeus"
 
 # Mongo
 alias mongostart="mongod run --config /usr/local/etc/mongod.conf"
+
+# Tmux
+alias tnew="tmux new -s"
+alias tattach="tmux attach -t"
+alias tlist="tmux list-sessions"
+alias switch="tmux switch -t"
+alias treload="tmux source-file ~/.tmux.conf"
