@@ -67,7 +67,6 @@ if executable("ag")
 endif
 
 " Color scheme
-let g:solarized_termcolors=256
 set background=light
 colorscheme solarized
 
