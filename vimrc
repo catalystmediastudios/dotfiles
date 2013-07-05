@@ -144,3 +144,6 @@ let g:syntastic_check_on_open=1
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" use zsh to rerun last command
+nmap <Leader>rr :call Send_to_Tmux("r\n")<CR>
