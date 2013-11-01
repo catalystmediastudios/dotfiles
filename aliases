@@ -33,6 +33,10 @@ alias z="zeus"
 # Mongo
 alias mongostart="mongod run --config /usr/local/etc/mongod.conf"
 
+# Postgres
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop"
+
 # Tmux
 alias tnew="tmux new -s"
 alias tattach="tmux attach -t"

@@ -11,7 +11,14 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set cursorline    " Highlight the current line
+set backspace=2 " make backspace work like most other apps
 set shell=/bin/sh
+
+" Change Color when entering Insert Mode
+autocmd InsertEnter * highlight  CursorLine ctermbg=white
+
+" Revert Color to default when leaving Insert Mode
+autocmd InsertLeave * highlight CursorLine ctermbg=7
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -142,6 +149,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1

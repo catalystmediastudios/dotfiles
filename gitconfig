@@ -1,5 +1,5 @@
 [user]
-  name = catalystmediastudios
+  name = Paul Smith
   email = catalystmediastudios@gmail.com
 
 # DO NOT EDIT BELOW THIS LINE
@@ -20,11 +20,17 @@
   create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
   delete-branch = !sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -
   merge-branch = !git checkout master && git merge @{-1}
+  # Merge current branch into master, only if it's a fast-forward. Doesn't check
+  # out master if it's not a FF merge.
+  mm = !test `git rev-parse master` = $(git merge-base HEAD master) && git checkout master && git merge HEAD@{1} || echo "Non-fastforward"
   pr = !hub pull-request
   rebase-origin = !git fetch origin && git rebase origin/master
   st = status
+  next = !git add . && git rebase --continue
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
 [merge]
   ff = only
+[help]
+  autocorrect = 1

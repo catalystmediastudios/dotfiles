@@ -4,6 +4,12 @@ preexec () {print -Pn "\e]2; %~/ \a"}
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+# For homebrew
+export PATH=/usr/local/bin:/Users/catalystmediastudios/.bin:/Users/catalystmediastudios/.rvm/gems/ruby-1.9.3-p194/bin:/Users/catalystmediastudios/.rvm/gems/ruby-1.9.3-p194@global/bin:/Users/catalystmediastudios/.rvm/rubies/ruby-1.9.3-p194/bin:/Users/catalystmediastudios/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+
+# Postgres
+export PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
+
 # DO NOT EDIT BELOW THIS LINE
 
 # load our own completion functions
