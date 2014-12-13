@@ -14,6 +14,7 @@ alias gci="git pull --rebase && rake && git push"
 
 # Bundler
 alias b="bundle"
+alias be="bundle exec"
 
 # Tests and Specs
 alias t="ruby -I test"
@@ -24,8 +25,7 @@ alias gi="gem install"
 alias giv="gem install -v"
 
 # Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
-alias m="migrate"
+alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias rk="rake"
 alias s="rspec"
 alias z="zeus"
@@ -39,3 +39,9 @@ alias tattach="tmux attach -t"
 alias tlist="tmux list-sessions"
 alias switch="tmux switch -t"
 alias treload="tmux source-file ~/.tmux.conf"
+
+# Elixir
+alias mt="mix test"
+
+# Editor
+alias sub="sublime"
